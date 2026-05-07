@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizing Activity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="menuScreen" class="screen active">
+      <div class="card hero">
+        <p class="eyebrow">Visualizing Activity</p>
+        <h1 id="siteTitle">Lesson 1 / Paragraph 1</h1>
+        <p class="lead">
+          ジャンケン後、勝った人は Winner、負けた人は Loser を選びます。
+        </p>
+
+        <div class="role-grid">
+          <button class="role-btn winner" data-key="winner1">Winner ①</button>
+          <button class="role-btn loser" data-key="loser1">Loser ①</button>
+          <button class="role-btn winner" data-key="winner2">Winner ②</button>
+          <button class="role-btn loser" data-key="loser2">Loser ②</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="activityScreen" class="screen">
+      <div class="topbar">
+        <button id="backBtn" class="ghost-btn">メニューに戻る</button>
+        <div id="roleLabel" class="role-label">Winner ①</div>
+      </div>
+
+      <div class="image-card">
+        <img id="activityImage" src="" alt="Activity image" />
+        <div class="image-actions">
+          <a id="downloadBtn" class="download-btn" href="#" download>画像をダウンロード</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
